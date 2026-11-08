@@ -1,0 +1,32 @@
+# ---- secrets (never commit) ----
+.env
+.env.*
+!.env.example
+.keyledger.json
+
+# ---- python / tooling ----
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+
+# ---- assignment data: the hiring team's transcripts and labels are not ours to publish ----
+# (regenerate locally with:  python prepare_data.py path/to/workbook.xlsx)
+*.xlsx
+*.xls
+data/*
+!data/split.json
+
+# ---- local working files, not part of the submission ----
+*.zip
+Claude-Exporter-*.md
+
+# ---- run outputs: keep only the final run's predictions + run metadata ----
+runs/*
+!runs/final/
+runs/final/*
+!runs/final/preds.jsonl
+!runs/final/preds.jsonl.run.json

@@ -1,0 +1,11 @@
+groq
+pandas
+openpyxl
+pydantic>=2
+python-dotenv
+matplotlib
+tabulate
+pytest
+jsonschema
+nbformat
+ipykernel

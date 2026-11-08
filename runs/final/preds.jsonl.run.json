@@ -1,0 +1,85 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "settings": {
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.0,
+    "reasoning_effort": "medium",
+    "max_completion_tokens": 6000,
+    "timeout": 120.0,
+    "max_attempts": 5,
+    "seed": 7,
+    "api_keys_in_pool": 5
+  },
+  "prompt_version": "v1+unreliable+vague",
+  "records": 50,
+  "requested_records": 50,
+  "runtime_s": 1997.6,
+  "usage_this_session": {
+    "prompt_tokens": 450238,
+    "completion_tokens": 113519,
+    "reasoning_tokens": 87504,
+    "attempts": 111,
+    "failed_records": 0
+  },
+  "strict_schema_mode_at_end": false,
+  "stopped_early": false,
+  "error_summary": {
+    "validation: N validation error for JourneyExtraction\nconsultation_day\n  Input should be an": 5,
+    "validation: N validation errors for EventsExtraction\nevents.N.order\n  Field required [type": 3,
+    "daily_limit key#N(gsk_\u2026XUXr)": 3,
+    "daily_limit key#N(gsk_\u2026JsaN)": 3,
+    "daily_limit key#N(gsk_\u2026Npyd)": 3,
+    "status N: Error code: N - {'error': {'message': 'Request too large for model `openai/gpt-o": 3,
+    "bad_request: Error code: N - {'error': {'message': \"Generated JSON does not match the expe": 2,
+    "rate_limit_minute wait Ns": 2,
+    "daily_limit key#N(gsk_\u2026NweN)": 1,
+    "daily_limit key#N(gsk_\u2026EDjt)": 1
+  },
+  "key_pool": [
+    {
+      "key": "key#1(gsk_\u2026XUXr)",
+      "calls": 2,
+      "tokens": 6860,
+      "daily_limit_hits": 1,
+      "minute_limit_hits": 0,
+      "disabled": "",
+      "exhausted_for_min": 50.4
+    },
+    {
+      "key": "key#2(gsk_\u2026l2q3)",
+      "calls": 35,
+      "tokens": 173793,
+      "daily_limit_hits": 0,
+      "minute_limit_hits": 1,
+      "disabled": "",
+      "exhausted_for_min": 0.0
+    },
+    {
+      "key": "key#3(gsk_\u2026CKKi)",
+      "calls": 37,
+      "tokens": 185367,
+      "daily_limit_hits": 0,
+      "minute_limit_hits": 0,
+      "disabled": "",
+      "exhausted_for_min": 0.0
+    },
+    {
+      "key": "key#4(gsk_\u2026Jsa3)",
+      "calls": 3,
+      "tokens": 5251,
+      "daily_limit_hits": 2,
+      "minute_limit_hits": 0,
+      "disabled": "",
+      "exhausted_for_min": 1.0
+    },
+    {
+      "key": "key#5(gsk_\u20267pyd)",
+      "calls": 4,
+      "tokens": 4431,
+      "daily_limit_hits": 3,
+      "minute_limit_hits": 0,
+      "disabled": "",
+      "exhausted_for_min": 11.6
+    }
+  ]
+}
